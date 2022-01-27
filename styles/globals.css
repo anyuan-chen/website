@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'Platform';
-  src: url('/Platform-BoldItalic.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -8,7 +12,7 @@
 
 @font-face {
   font-family: 'Platform Hairline';
-  src: url('/Platform-Hairline.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-Hairline.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -16,7 +20,7 @@
 
 @font-face {
   font-family: 'Platform';
-  src: url('/Platform-Bold.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -24,7 +28,7 @@
 
 @font-face {
   font-family: 'Platform';
-  src: url('/Platform-Light.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -32,7 +36,7 @@
 
 @font-face {
   font-family: 'Platform';
-  src: url('/Platform-LightItalic.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -40,7 +44,7 @@
 
 @font-face {
   font-family: 'Platform Hairline';
-  src: url('/Platform-HairlineItalic.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-HairlineItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -48,7 +52,7 @@
 
 @font-face {
   font-family: 'Platform';
-  src: url('/Platform-Medium.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -56,7 +60,7 @@
 
 @font-face {
   font-family: 'Platform';
-  src: url('/Platform-Regular.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -64,7 +68,7 @@
 
 @font-face {
   font-family: 'Platform';
-  src: url('/Platform-MediumItalic.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -72,12 +76,11 @@
 
 @font-face {
   font-family: 'Platform';
-  src: url('/Platform-RegularItalic.ttf') format('truetype');
+  src: url('/fonts/platform/Platform-RegularItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
-
 
 html,
 body {
@@ -86,15 +89,19 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: normal;
 }
 
 a {
   color: inherit;
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 2.441rem;
-  color: #2A3E46;
+  font-weight: 400;
+  color: #CCD1D3;
+  text-underline-offset: 3px;
+  
 }
 
 * {
@@ -106,13 +113,16 @@ h1 {
   font-family: Platform, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: white;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 5.96rem;
   font-family: Platform, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: #2A3E46;
+  color: #5D6C72;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -120,6 +130,8 @@ h3 {
   font-family: Platform, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: white;
+  font-weight: 400;
+
 }
 
 h4 {
@@ -127,10 +139,23 @@ h4 {
   font-family: Platform, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 0.08em;
+  font-weight: 400;
+  
+
 }
 
+h5 {
+  font-size: 3.052rem;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: white;
+  font-weight: 400;
+}
 p{
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.953rem;
+  font-weight: 400;
+  color: #CCD1D3;
+
 }
