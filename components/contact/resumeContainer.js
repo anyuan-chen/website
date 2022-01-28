@@ -2,37 +2,46 @@ import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import ExternalLink from "./link";
 
-export default function LinkContainer() {
+export default function ResumeContainer() {
   const [active, setActive] = useState(false);
   return (
-    <animated.section
+    <section
       onMouseEnter={() => {
         setActive(true);
       }}
       onMouseLeave={() => {
         setActive(false);
       }}
+      style={{ marginTop: "10px" }}
     >
-      <h2 style={{ color: "rgba(255,255,255,0.9)", fontSize: "6rem", fontWeight: "500", letterSpacing: "0.2rem" }}>Get In Touch</h2>
-      <ExternalLink
-        text="andrew.chen.anyuan@gmail.com"
-        label="Email"
-        state={active}
-        link="mailto:andrew.chen.anyuan@gmail.com"
-      ></ExternalLink>
-      <ExternalLink
-        text="github.com/anyuan-chen"
-        label="Github"
-        state={active}
-        link="https://github.com/anyuan-chen"
-      ></ExternalLink>
-      <ExternalLink
-        text="linkedin.com/in/anyuan-chen/"
-        label="Linkedin"
-        state={active}
-        link="https://www.linkedin.com/in/anyuan-chen/"
-      ></ExternalLink>
-    </animated.section>
+      <h2
+        style={{
+          color: "rgba(255,255,255,0.9)",
+          fontSize: "6rem",
+          fontWeight: "500",
+          letterSpacing: "0.2rem",
+        }}
+      >
+        Resume
+      </h2>
+      <div className="flex">
+        <ExternalLink
+          text=".pdf"
+          state={active}
+          link="mailto:andrew.chen.anyuan@gmail.com"
+        ></ExternalLink>
+        <ExternalLink
+          text=".docx"
+          state={active}
+          link="mailto:andrew.chen.anyuan@gmail.com"
+        ></ExternalLink>
+        <ExternalLink
+          text=".tex"
+          state={active}
+          link="mailto:andrew.chen.anyuan@gmail.com"
+        ></ExternalLink>
+      </div>
+    </section>
   );
 }
 // export default function ProjectsHeading() {

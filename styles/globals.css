@@ -120,7 +120,7 @@ h2 {
   font-size: 5.96rem;
   font-family: Platform, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: #5D6C72;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
 
 }

@@ -1,15 +1,16 @@
 import React from "react";
 import { useSpring, animated, config } from "react-spring";
 import { useState } from "react";
-export default function ExternalLink({ label, text, state }) {
+export default function ExternalLink({ label, text, state, link }) {
   const [active, setActive] = useState(false);
 
   const props = useSpring({
     textDecorationColor: active
-      ? "rgba(255, 255, 255, 0)"
-      : state
-      ? "gray"
-      : "white",
+      ? state
+        ? "gray"
+        : "white"
+      : "rgba(255, 255, 255, 0)",
+
     color: active ? "white" : state ? "gray" : "white",
     config: config.gentle,
   });
@@ -22,7 +23,9 @@ export default function ExternalLink({ label, text, state }) {
         setActive(false);
       }}
       style={{ textDecoration: "none" }}
-      href=""
+      href={link}
+      target="_blank"
+      rel="noreferrer"
     >
       <h2 style={{ fontSize: "4.5rem", letterSpacing: "0.02rem" }}>{label}</h2>
       <div className="flex">
