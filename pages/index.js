@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar/navbar";
 export default function Home() {
   return (
     <div className={styles.grid}>
@@ -23,12 +23,12 @@ export default function Home() {
           </h5>
         </section>
         <section className={styles.projects}>
-          <h2 className="pt-24">Projects</h2>
-          <div className="flex">
-            <a href="https://www.google.com">
+          <h2 className="pt-24">Work</h2>
+          <div >
+            <a href="https://www.google.com" className="flex">
               <h1 className="underline">Project 1</h1>
+              <img src="/icons/arrow_downward_white.svg"></img>
             </a>
-            <img src="/icons/arrow_downward_white.svg"></img>
           </div>
         </section>
         <section className={styles.writing}>
