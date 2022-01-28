@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/navbar/navbar";
+import ProjectsHeading from "../components/main/projectsHeading";
 export default function Home() {
   return (
     <div className={styles.grid}>
@@ -24,12 +25,7 @@ export default function Home() {
         </section>
         <section className={styles.projects}>
           <h2 className="pt-24">Work</h2>
-          <div >
-            <a href="https://www.google.com" className="flex">
-              <h1 className="underline">Project 1</h1>
-              <img src="/icons/arrow_downward_white.svg"></img>
-            </a>
-          </div>
+          <ProjectsHeading></ProjectsHeading>
         </section>
         <section className={styles.writing}>
           <div className="flex pt-24">
