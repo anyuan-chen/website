@@ -13,25 +13,36 @@ export default function LinkContainer() {
         setActive(false);
       }}
     >
-      <h2 style={{ color: "rgba(255,255,255,0.9)", fontSize: "6rem", fontWeight: "500", letterSpacing: "0.2rem" }}>Get In Touch</h2>
-      <ExternalLink
-        text="andrew.chen.anyuan@gmail.com"
-        label="Email"
-        state={active}
-        link="mailto:andrew.chen.anyuan@gmail.com"
-      ></ExternalLink>
-      <ExternalLink
-        text="github.com/anyuan-chen"
-        label="Github"
-        state={active}
-        link="https://github.com/anyuan-chen"
-      ></ExternalLink>
-      <ExternalLink
-        text="linkedin.com/in/anyuan-chen/"
-        label="Linkedin"
-        state={active}
-        link="https://www.linkedin.com/in/anyuan-chen/"
-      ></ExternalLink>
+      <h2
+        style={{
+          color: "rgba(255,255,255,0.9)",
+          fontSize: "6rem",
+          fontWeight: "500",
+          letterSpacing: "0.2rem",
+        }}
+      >
+        Get In Touch
+      </h2>
+      <div className="flex flex-col space-y-8">
+        <ExternalLink
+          text="andrew.chen.anyuan@gmail.com"
+          label="Email"
+          state={active}
+          link="mailto:andrew.chen.anyuan@gmail.com"
+        ></ExternalLink>
+        <ExternalLink
+          text="github.com/anyuan-chen"
+          label="Github"
+          state={active}
+          link="https://github.com/anyuan-chen"
+        ></ExternalLink>
+        <ExternalLink
+          text="linkedin.com/in/anyuan-chen/"
+          label="Linkedin"
+          state={active}
+          link="https://www.linkedin.com/in/anyuan-chen/"
+        ></ExternalLink>
+      </div>
     </animated.section>
   );
 }

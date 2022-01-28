@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
@@ -9,14 +10,14 @@ import NavbarElement from "./navbarElement";
 export default function Navbar() {
   return (
     <ul className="grid grid-rows-6 h-full">
-      <div className="flex justify-center items-center row-span-2">
-        <div className="w-3/4 flex items-center justify-center relative">
+      <div className="flex justify-center row-span-2 flex-start">
+        <a href="/" className="w-3/4" style={{paddingTop: "50px"}}>
           <img
             src="/icons/logo_placeholder.svg"
             alt="logo for Andrew Chen"
             width="100%"
           />
-        </div>
+        </a>
       </div>
       <div className="row-start-3 flex justify-center space-y-8">
         <div className="w-3/4">

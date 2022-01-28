@@ -24,7 +24,7 @@ export default function ResumeContainer() {
       >
         Resume
       </h2>
-      <div className="flex">
+      <div className="flex space-evenly">
         <ExternalLink
           text=".pdf"
           state={active}

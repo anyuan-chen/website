@@ -15,13 +15,21 @@ export default function Contact() {
       >
         <section
           className=" col-span-5 col-start-1 row-start-1 row-span-4"
-          style={{ backgroundColor: "#021923" }}
+          style={{
+            backgroundColor: "#021923",
+            paddingTop: "50px",
+            paddingLeft: "50px",
+          }}
         >
           <LinkContainer></LinkContainer>
         </section>
         <section
           className="col-span-5 col-start-1 row-start-5 row-span-2"
-          style={{ backgroundColor: "#021923" }}
+          style={{
+            backgroundColor: "#021923",
+            paddingTop: "50px",
+            paddingLeft: "50px",
+          }}
         >
           <ResumeContainer></ResumeContainer>
         </section>

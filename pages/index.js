@@ -12,10 +12,10 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.about}>
           <div className="flex">
-            <h2 className={styles.aboutHeading}>About Me</h2>
+            <h2>About Me</h2>
             <img src="/icons/arrow_downward.svg"></img>
           </div>
-          <h1 className={styles.aboutMain}>
+          <h1 className="pt-16">
             I’m a software engineer based in Toronto.{" "}
           </h1>
           <h5 className={styles.aboutBlurb}>
