@@ -9,17 +9,16 @@ import NavbarElement from "./navbarElement";
 
 export default function Navbar() {
   return (
-    <ul className="grid grid-rows-6 h-full">
-      <div className="flex justify-center row-span-2 flex-start">
+    <ul className="grid grid-rows-6 h-full ">
+      <div className="flex justify-center row-span-2 flex-start w-full">
         <a href="/" className="w-3/4" style={{paddingTop: "50px"}}>
           <img
             src="/icons/logo_placeholder.svg"
             alt="logo for Andrew Chen"
-            width="100%"
           />
         </a>
       </div>
-      <div className="row-start-3 flex justify-center space-y-8">
+      <div className="row-start-3 flex justify-center space-y-8 w-full">
         <div className="w-3/4">
           {/* <Link href="/">
               <a className="no-underline text-black">

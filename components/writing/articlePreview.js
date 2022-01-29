@@ -26,7 +26,7 @@ export default function ArticlePreview({ title, description, date }) {
       }}
     >
       <animated.div className=" w-full px-24 py-20 border flex flex-col  border-gray-500">
-        <animated.div style={{ transform: scaleProp.transform }} className="flex flex-col space-y-8">
+        <animated.div  className="flex flex-col space-y-8">
           <animated.h1
             style={{ marginBottom: "-10px", opacity: props.opacity }}
           >
